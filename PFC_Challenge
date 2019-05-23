@@ -1,0 +1,24 @@
+IPadd= input('Enter IP address: ')
+print(IPadd)
+segmentCount = 0
+perSegmentCount = 0
+count = 0
+cleanedNumber = ''
+for i in range(0,len(IPadd)):
+    if IPadd[i] in "0123456978":
+        cleanedNumber = cleanedNumber + IPadd[i]
+        perSegmentCount+=1
+        count +=1
+
+    else:
+
+        segmentCount+=1
+    if IPadd[n] in '0123456789':
+        for j in range(IPadd[count], len(IPadd - 1)):
+            perSegmentCount += 1
+        print("The per-segment count is {}".format(perSegmentCount))
+        perSegmentCount = 0
+
+#newNumber = int(cleanedNumber)
+
+print("The segment count is {}".format(segmentCount))

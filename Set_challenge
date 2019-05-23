@@ -1,0 +1,6 @@
+simple_text = "python is a very powerful lanaguage"
+vowels = frozenset('aeiou')
+finalSet = set(simple_text).difference(vowels)
+print(finalSet)
+finalList = sorted(finalSet)
+print(finalList)

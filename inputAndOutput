@@ -1,0 +1,11 @@
+# jobber = open("sampleText.txt", "r")
+# for line in jobber:
+#         print(line)
+#
+# jobber.close()
+
+
+with open("sampleText.txt", "r") as jobber:
+    for line in jobber:
+        if "JAB" in line.upper():
+            print(line, end='')

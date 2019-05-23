@@ -1,0 +1,12 @@
+#cast as an integer for future computation
+
+name = input("Hey there! Cam I meet U? ")
+age =int( input("How old are you, {0}? ".format(name)))
+
+
+if 18<= age <=31:
+    print("You are welcome to this holiday")
+elif age <18:
+    print("Kindly check again in {0} years.".format(18-age))
+elif age > 31:
+    print("Kindly checkout our adult section :-)")
